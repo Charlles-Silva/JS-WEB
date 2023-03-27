@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jack Conversor</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> Jack Conversor</h1>
+        </header>
+        <main>
+            <label>
+                Converter <b>de</b>
+                <select id="select-1" class="input-select">
+                    <option>
+                        R$ Real brasileiro
+                    </option>
+                </select>
+            </label>
+
+            <label>
+                Converter <b>para</b>
+                <select id="select-2" class="input-select">
+                    <option>
+                        US$ Dólar Americano
+                    </option>
+
+                    <option>
+                        € Euro
+                    </option>
+                </select>
+            </label>
+            <label>
+                <b>Valor</b>
+                <input id="input-select" placeholder="R$: 10.000,00">
+            </label>
+            <button>Converter</button>
+        </main>
+
+        <footer>
+            <div class="currency-container">
+                <img class="img-brasil" src="./brasil.png" alt="Bandeira Brasil">
+                <p class="p-4">Real</p>
+                <h2 class="h2-h3" id="real-value-text">R$ 0,00</h2>
+            </div>
+
+            <img class="img-vetor" src="./Vector.png" alt="Seta">
+
+            <div class="currency-container">
+                
+                <img class="img-usa" id="currency-img" src="./usa.png" alt="Pais conversao">
+                <P class="p-4" id="currency-name">Dólar Americano</P>
+                <h3 class="h2-h3" id="currency-value-text">US$ 0,00</h3>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./script.js">
+</script>
+
+</html>
